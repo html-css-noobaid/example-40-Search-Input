@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Input</title>
+	</head>
+
+	<body>
+		<form action="http://www.example.com/login.php">
+			<p> Username:
+			      <input type="text" name="username" 
+				size="15" maxlength = "30" />
+			</p>
+	
+			<p> Password:
+			      <input type="password" name="password" 
+				size="15" maxlength="30" />
+			</p>
+		</form>
+
+		<form action="http://www.example.com/comments.php">
+			<p>Tell us about yourself.</p>
+			<textarea name="comments" cols="20" 
+			rows="4">Enter your comments...</textarea>
+		</form>
+
+		<form action="http://www.example.com/profile.php">
+			<p>How did you hear about us?:
+				<br />
+				<input type="radio" value="friend" name="radio" 
+				/> Friend
+				<input type="radio" value="ad" name="radio"
+				/> Online/Ad
+				<input type="radio"  value="other" name="radio"
+				/> Other
+			</p>
+		</form>
+
+		<form action="http://www.example.com/profile.php">
+			<p>What type of work are you interested in?(check all that apply):
+				<br />
+				<input type="checkbox"  name="checkbox"
+				value="part" /> Part-Time
+				<input type="checkbox" name="checkbox"
+				 value="full" /> Full-Time
+				<input type="checkbox" name="checkbox"
+				value="intern" /> Internship
+			</p>
+		</form>
+
+		<form action="http://www.example.com/profile.php">
+			<p>Are you a U.S. citizen?</p>
+			<select name="devices">
+				<option value="yes">yes</option>
+				<option value="no">no</option>
+			</select>
+		</form>
+
+		<form action="http://www.example.com/profile.php">
+			<p>What is your highest completed level of education?</p>
+			<select size="3" multiple="multiple">
+				<option value="High School">High School/GED</option>
+				<option value="Associate">Associate's Degree</option>
+				<option value="Bachelor">Bachelor's Degree</option>
+				<option value="Master">Master's Degree/PHD</option>
+			</select>
+		</form>
+		
+		<form action="http://www.example.com/upload.php" method="post">
+			<p>Upload your resume:</p>
+			<input type="file" name="resume" /><br />
+			<input type="submit" value="Upload" />
+		</form>
+
+		<form action="http://www.example.com/subscribe.php">
+			<p>Submit your email:</p>
+			<input type="text" name="email" />
+			<input type="submit" value="Submit" />
+		</form>
+		
+		<form action="http://www.example.org/subscribe.php">			
+			<p>Submit your email:</p> 			
+			<input type="text" name="email" />			
+			<input type="image" src="images/subscribe.jpg" width="100" height="20" />		
+		</form>
+
+		<form action="http://www.example.com/subscribe.php">	
+			<p>Join our subscription list:</p> 	
+			<input type="hidden" name="user" value="applicant" />			
+			<button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button>
+			
+		</form>
+
+
+		<br/ >	
+
+		<form action="http://www.example.com/profile.php">
+			
+			<label>Age: <input type="text" name="age" /></label>			
+			<br/ >			
+			<p>Gender:</p>
+			
+			<input id="female" type="radio" name="gender" value="f">			
+			<label for="female">Female</label>			
+			<input id="male" type="radio" name="gender" value="m">			
+			<label for="male">Male</label>		
+		</form>
+	
+
+		<form action="http://www.example.com/subscribe.php">      			
+			<fieldset>				
+				<legend>Contact details</legend>				
+				<label>Email:<br />
+				<input type="text" name="email" /></label> <br />				
+				<label>Mobile:<br />
+				<input type="text" name="mobile" /></label><br />				
+				<label>Telephone:<br />
+				<input type="text" name="telephone" /></label>			
+			</fieldset>
+		
+		</form>
+	
+		
+		<br />
+
+		<form action="http://www.example.com/profile.php" method="post">
+			
+			<label for="username">Username:</label>
+			
+			<input type="text" name="username" id="username" 
+			required="required" /><br />
+			
+			<label for="password">Password:</label>
+			
+			<input type="password" name="password" id="password" 
+			required="required" />
+			
+			<input type="submit" value="Submit" />
+		
+		</form>
+
+		
+		<br />		
+
+		<form action="http://www.example.com/login.php" method="post">			
+			<label for="username">Date of birth:</label>			
+			<input type="date" id="DOB" name="DOB" />			
+			<input type="submit" value="Submit" />		
+		</form>
+		
+		<form action="http://www.example.org/subscribe.php"> 			
+			<p>Please enter your email address:</p>			
+			<input type="email" name="email" />			
+			<input type="submit" value="Submit" />		
+		</form>
+	
+		<form action="http://www.example.org/profile.php"> 			
+			<p>Please enter your website address:</p>			
+			<input type="url" name="website" />			
+			<input type="submit" value="Submit" />		
+		</form>
+	
+
+		<form action="http://www.example.org/search.php">			
+			<p>Search:</p>		
+			<input type="search" name="search"
+			 placeholder="Enter keyword" />			
+			<input type="submit" value="Search" />		
+		</form>
+	
+	</body>
+</html>
